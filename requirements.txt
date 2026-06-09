@@ -1,0 +1,42 @@
+# Core
+fastapi>=0.111
+uvicorn[standard]>=0.29
+pydantic>=2.0
+python-multipart>=0.0.9
+httpx>=0.27
+
+# Frontend
+streamlit>=1.35
+
+# LLM & orchestration
+langchain>=0.2
+langchain-core>=0.2
+langchain-community>=0.2
+langchain-groq>=0.1
+langchain-huggingface>=0.0.3
+langchain-chroma>=0.2
+langchain-text-splitters>=0.2
+
+# Retrieval
+tavily-python>=0.3
+arxiv>=2.1
+chromadb>=0.5
+
+# Embeddings
+sentence-transformers>=3.0
+
+# PDF parsing
+pymupdf>=1.24
+
+# Memory / caching
+redis>=5.0
+
+# PDF export (revision notes download)
+reportlab>=4.0
+
+# Mind map rendering (mindmap_draw.py)
+Pillow>=10.0
+matplotlib>=3.8
+
+# Utilities
+python-dotenv>=1.0

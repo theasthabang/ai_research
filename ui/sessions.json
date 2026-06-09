@@ -1,0 +1,1492 @@
+[
+  {
+    "id": "374d6a7e-a03a-4046-9ca8-620c44ab7d41",
+    "name": "Operating System",
+    "named": true,
+    "messages": [],
+    "pdf": "OS_Full_Notes (1).pdf",
+    "mm_pages": [
+      {
+        "page_title": "Introduction to Operating Systems",
+        "center_topic": "Operating System Basics",
+        "branches": [
+          {
+            "name": "What is an Operating System",
+            "color": "#FF6B6B",
+            "sub_branches": [
+              {
+                "name": "Definition and Purpose",
+                "points": [
+                  "Manages computer hardware and software resources",
+                  "Provides a platform for application software"
+                ]
+              },
+              {
+                "name": "Types of Operating Systems",
+                "points": [
+                  "Single-process",
+                  "Multiprogramming",
+                  "Batch-processing"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Operating System Functions",
+            "color": "#4ECDC4",
+            "sub_branches": [
+              {
+                "name": "Access to Hardware",
+                "points": [
+                  "Interface between user and computer hardware",
+                  "Resource management"
+                ]
+              },
+              {
+                "name": "Abstraction and Isolation",
+                "points": [
+                  "Hides underlying complexity of hardware",
+                  "Facilitates execution of application programs"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Operating System Goals",
+            "color": "#45B7D1",
+            "sub_branches": [
+              {
+                "name": "CPU Utilization and Process Starvation",
+                "points": [
+                  "Maximum CPU utilization",
+                  "Less process starvation"
+                ]
+              },
+              {
+                "name": "Job Execution and Priority",
+                "points": [
+                  "Higher priority job execution",
+                  "Efficient use of resources"
+                ]
+              }
+            ]
+          }
+        ],
+        "key_facts": [
+          "An operating system is a piece of software that manages computer hardware and software resources.",
+          "The primary goal of an operating system is to provide a platform for application software."
+        ],
+        "exam_corner": [
+          "Understand the definition and purpose of an operating system.",
+          "Be able to identify the different types of operating systems."
+        ]
+      },
+      {
+        "page_title": "Process Management in OS",
+        "center_topic": "Process Scheduling",
+        "branches": [
+          {
+            "name": "Thread Scheduling",
+            "color": "#96CEB4",
+            "sub_branches": [
+              {
+                "name": "Thread Priority and Scheduling",
+                "points": [
+                  "Threads are scheduled based on priority",
+                  "Processor time slices are assigned by the operating system"
+                ]
+              },
+              {
+                "name": "Thread Context Switching",
+                "points": [
+                  "Fast switching",
+                  "CPU's cache state is preserved"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Process Context Switching",
+            "color": "#FFEAA7",
+            "sub_branches": [
+              {
+                "name": "Process State and Memory Address Space",
+                "points": [
+                  "OS saves current state of process",
+                  "Switches to another process by restoring its state"
+                ]
+              },
+              {
+                "name": "Process Context Switching vs Thread Context Switching",
+                "points": [
+                  "Includes switching of memory address space",
+                  "Slow switching"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Kernel and User Space",
+            "color": "#DDA0DD",
+            "sub_branches": [
+              {
+                "name": "Kernel and Process Management",
+                "points": [
+                  "Kernel interacts with hardware and performs process management",
+                  "User space runs application software"
+                ]
+              },
+              {
+                "name": "Kernel and Memory Management",
+                "points": [
+                  "Kernel allocates and deallocates memory space",
+                  "User space interacts with kernel"
+                ]
+              }
+            ]
+          }
+        ],
+        "key_facts": [
+          "Thread scheduling is based on priority and processor time slices.",
+          "Process context switching includes switching of memory address space."
+        ],
+        "exam_corner": [
+          "Understand the difference between thread and process context switching.",
+          "Be able to identify the role of the kernel in process management."
+        ]
+      },
+      {
+        "page_title": "System Calls and OS",
+        "center_topic": "System Call Categories",
+        "branches": [
+          {
+            "name": "Process Control System Calls",
+            "color": "#FF8C42",
+            "sub_branches": [
+              {
+                "name": "Process Creation and Termination",
+                "points": [
+                  "CreateProcess()",
+                  "ExitProcess()"
+                ]
+              },
+              {
+                "name": "Process Synchronization and Communication",
+                "points": [
+                  "WaitForSingleObject()",
+                  "fork()"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "File Management System Calls",
+            "color": "#6BCB77",
+            "sub_branches": [
+              {
+                "name": "File Creation and Deletion",
+                "points": [
+                  "CreateFile()",
+                  "DeleteFile()"
+                ]
+              },
+              {
+                "name": "File Access and Modification",
+                "points": [
+                  "ReadFile()",
+                  "WriteFile()"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Device Management System Calls",
+            "color": "#FF6B6B",
+            "sub_branches": [
+              {
+                "name": "Device Request and Release",
+                "points": [
+                  "SetConsoleMode()",
+                  "CloseHandle()"
+                ]
+              },
+              {
+                "name": "Device Access and Modification",
+                "points": [
+                  "ReadConsole()",
+                  "WriteConsole()"
+                ]
+              }
+            ]
+          }
+        ],
+        "key_facts": [
+          "Process control system calls include process creation and termination.",
+          "File management system calls include file creation and deletion."
+        ],
+        "exam_corner": [
+          "Understand the different categories of system calls.",
+          "Be able to identify the specific system calls for each category."
+        ]
+      },
+      {
+        "page_title": "Processor Design Basics",
+        "center_topic": "CPU Architecture",
+        "branches": [
+          {
+            "name": "Compatibility",
+            "color": "#FF6B6B",
+            "sub_branches": [
+              {
+                "name": "64-bit vs 32-bit",
+                "points": [
+                  "64-bit CPU runs 32-bit OS",
+                  "32-bit CPU only runs 32-bit OS"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Graphics Performance",
+            "color": "#4ECDC4",
+            "sub_branches": [
+              {
+                "name": "8-byte calculations",
+                "points": [
+                  "Faster graphics-intensive apps",
+                  "Better graphics performance"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Memory Types",
+            "color": "#45B7D1",
+            "sub_branches": [
+              {
+                "name": "Register, Cache, Main Memory",
+                "points": [
+                  "Register: smallest unit of storage",
+                  "Cache: temporary storage for CPU"
+                ]
+              }
+            ]
+          }
+        ],
+        "key_facts": [
+          "Registers are most expensive",
+          "Secondary storages are cheaper"
+        ],
+        "exam_corner": [
+          "Focus on CPU architecture",
+          "Understand memory types"
+        ]
+      },
+      {
+        "page_title": "Process Basics",
+        "center_topic": "Process Creation",
+        "branches": [
+          {
+            "name": "Process Creation Steps",
+            "color": "#96CEB4",
+            "sub_branches": [
+              {
+                "name": "Load program, allocate stack, heap",
+                "points": [
+                  "IO tasks, OS handoffs control",
+                  "Process architecture"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Process Attributes",
+            "color": "#FFEAA7",
+            "sub_branches": [
+              {
+                "name": "Process ID, Priority, Status",
+                "points": [
+                  "Process creation, termination"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Process States",
+            "color": "#DDA0DD",
+            "sub_branches": [
+              {
+                "name": "Running, Waiting, Zombie",
+                "points": [
+                  "Process scheduling, context switching"
+                ]
+              }
+            ]
+          }
+        ],
+        "key_facts": [
+          "Process is a program under execution",
+          "OS creates a process by converting program"
+        ],
+        "exam_corner": [
+          "Understand process creation steps",
+          "Know process attributes and states"
+        ]
+      },
+      {
+        "page_title": "Process Scheduling",
+        "center_topic": "Scheduling Algorithms",
+        "branches": [
+          {
+            "name": "FCFS Scheduling",
+            "color": "#FF8C42",
+            "sub_branches": [
+              {
+                "name": "First-Come-First-Served",
+                "points": [
+                  "Non-preemptive, no convoy effect"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Round Robin Scheduling",
+            "color": "#6BCB77",
+            "sub_branches": [
+              {
+                "name": "Preemptive, time-sharing",
+                "points": [
+                  "Low starvation, easy to implement"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Multi-Level Queue Scheduling",
+            "color": "#FF6B6B",
+            "sub_branches": [
+              {
+                "name": "Multiple queues, fixed priority",
+                "points": [
+                  "Interactive, batch, system processes"
+                ]
+              }
+            ]
+          }
+        ],
+        "key_facts": [
+          "FCFS is non-preemptive",
+          "Round Robin is preemptive"
+        ],
+        "exam_corner": [
+          "Understand FCFS and Round Robin",
+          "Know Multi-Level Queue scheduling"
+        ]
+      },
+      {
+        "page_title": "Critical Section Problem",
+        "center_topic": "Process Synchronization",
+        "branches": [
+          {
+            "name": "Critical Section",
+            "color": "#FF6B6B",
+            "sub_branches": [
+              {
+                "name": "Definition",
+                "points": [
+                  "Segment of code accessing shared resources",
+                  "Processes/threads execute concurrently"
+                ]
+              },
+              {
+                "name": "Issues",
+                "points": [
+                  "Race Condition",
+                  "Thread scheduling issue"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solution",
+            "color": "#4ECDC4",
+            "sub_branches": [
+              {
+                "name": "Atomic Operations",
+                "points": [
+                  "Make Critical code section atomic",
+                  "Executed in one CPU cycle"
+                ]
+              },
+              {
+                "name": "Mutual Exclusion",
+                "points": [
+                  "Using locks",
+                  "Semaphores"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Locks",
+            "color": "#45B7D1",
+            "sub_branches": [
+              {
+                "name": "Advantages",
+                "points": [
+                  "Implement mutual exclusion",
+                  "Avoid race condition"
+                ]
+              },
+              {
+                "name": "Disadvantages",
+                "points": [
+                  "Contention",
+                  "Deadlocks",
+                  "Debugging",
+                  "Starvation"
+                ]
+              }
+            ]
+          }
+        ],
+        "key_facts": [
+          "Process synchronization techniques maintain consistency",
+          "Critical Section is a segment of code accessing shared resources"
+        ],
+        "exam_corner": [
+          "Understand the concept of Critical Section",
+          "Know the advantages and disadvantages of locks"
+        ]
+      },
+      {
+        "page_title": "Deadlock Problem",
+        "center_topic": "Resource Allocation",
+        "branches": [
+          {
+            "name": "Deadlock Definition",
+            "color": "#96CEB4",
+            "sub_branches": [
+              {
+                "name": "Process Waiting",
+                "points": [
+                  "Process requests a resource",
+                  "Resource is busy or not available"
+                ]
+              },
+              {
+                "name": "Circular Wait",
+                "points": [
+                  "Two or more processes waiting on resources",
+                  "Resources are busy or not available"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solution",
+            "color": "#FFEAA7",
+            "sub_branches": [
+              {
+                "name": "Semaphore Solution",
+                "points": [
+                  "Each fork is a binary semaphore",
+                  "Ph. calls wait() operation to acquire a fork"
+                ]
+              },
+              {
+                "name": "Enhancement Rules",
+                "points": [
+                  "Allow at most 4 ph. to be sitting simultaneously",
+                  "Odd-even rule"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Deadlock Avoidance",
+            "color": "#DDA0DD",
+            "sub_branches": [
+              {
+                "name": "Safe State",
+                "points": [
+                  "A state is safe if the system can allocate resources",
+                  "Avoid Deadlock"
+                ]
+              },
+              {
+                "name": "Resource Allocation",
+                "points": [
+                  "Schedule process and its resources allocation",
+                  "Avoid Deadlock"
+                ]
+              }
+            ]
+          }
+        ],
+        "key_facts": [
+          "Deadlock occurs when two or more processes are waiting on resources",
+          "Deadlock avoidance is achieved by scheduling process and its resources allocation"
+        ],
+        "exam_corner": [
+          "Understand the concept of Deadlock",
+          "Know the solution to Deadlock problem"
+        ]
+      },
+      {
+        "page_title": "Deadlock Prevention",
+        "center_topic": "Resource Allocation",
+        "branches": [
+          {
+            "name": "Resource Ordering",
+            "color": "#FF8C42",
+            "sub_branches": [
+              {
+                "name": "Proper Ordering",
+                "points": [
+                  "Imposing a proper ordering of resource allocation",
+                  "Avoid Circular Wait"
+                ]
+              },
+              {
+                "name": "Locking Resources",
+                "points": [
+                  "Locking resources in a specific order",
+                  "Avoid Deadlock"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Deadlock Detection",
+            "color": "#6BCB77",
+            "sub_branches": [
+              {
+                "name": "Detecting Deadlock",
+                "points": [
+                  "Detecting Deadlock using resource allocation graph",
+                  "Avoiding Deadlock"
+                ]
+              },
+              {
+                "name": "Recovering from Deadlock",
+                "points": [
+                  "Recovering from Deadlock by aborting one process",
+                  "Avoiding Deadlock"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Deadlock Recovery",
+            "color": "#FF6B6B",
+            "sub_branches": [
+              {
+                "name": "Abort One Process",
+                "points": [
+                  "Aborting one process to recover from Deadlock",
+                  "Avoiding Deadlock"
+                ]
+              },
+              {
+                "name": "Preempting Resources",
+                "points": [
+                  "Preempting resources from one process to recover from Deadlock",
+                  "Avoiding Deadlock"
+                ]
+              }
+            ]
+          }
+        ],
+        "key_facts": [
+          "Deadlock prevention is achieved by imposing a proper ordering of resource allocation",
+          "Deadlock detection is achieved by using resource allocation graph"
+        ],
+        "exam_corner": [
+          "Understand the concept of Deadlock prevention",
+          "Know the solution to Deadlock problem"
+        ]
+      },
+      {
+        "page_title": "Section 10",
+        "center_topic": "Topic 10",
+        "branches": [],
+        "key_facts": [],
+        "exam_corner": []
+      },
+      {
+        "page_title": "Section 11",
+        "center_topic": "Topic 11",
+        "branches": [],
+        "key_facts": [],
+        "exam_corner": []
+      },
+      {
+        "page_title": "Section 12",
+        "center_topic": "Topic 12",
+        "branches": [],
+        "key_facts": [],
+        "exam_corner": []
+      },
+      {
+        "page_title": "Page Replacement Algorithms",
+        "center_topic": "Page Replacement",
+        "branches": [
+          {
+            "name": "FIFO Algorithm",
+            "color": "#FF6B6B",
+            "sub_branches": [
+              {
+                "name": "How it Works",
+                "points": [
+                  "Allocate frame to the page as it comes",
+                  "Replace the oldest page"
+                ]
+              },
+              {
+                "name": "Drawbacks",
+                "points": [
+                  "Performance is not always good",
+                  "Belady's anomaly is present"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Optimal Page Replacement",
+            "color": "#45B7D1",
+            "sub_branches": [
+              {
+                "name": "How it Works",
+                "points": [
+                  "Find if a page that is not in memory",
+                  "Replace the page that will not be used"
+                ]
+              },
+              {
+                "name": "Advantages",
+                "points": [
+                  "Reduces page faults",
+                  "Good performance"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Page Fault Handling",
+            "color": "#4ECDC4",
+            "sub_branches": [
+              {
+                "name": "What is Page Fault",
+                "points": [
+                  "Occurs when a page is not in memory",
+                  "OS must bring the page from swap-space"
+                ]
+              },
+              {
+                "name": "Page Replacement",
+                "points": [
+                  "Decides which page to replace",
+                  "Swaps out a page and brings in a new one"
+                ]
+              }
+            ]
+          }
+        ],
+        "key_facts": [
+          "FIFO algorithm has poor performance",
+          "Optimal page replacement reduces page faults"
+        ],
+        "exam_corner": [
+          "Understand Belady's anomaly",
+          "Know the advantages of optimal page replacement"
+        ]
+      }
+    ],
+    "revision_data": {
+      "filename": "OS_Full_Notes (1).pdf",
+      "sections": [
+        {
+          "topic": "An Introduction to Operating Systems",
+          "mindmap": {
+            "center": "Operating System Basics",
+            "branches": [
+              {
+                "name": "What is an OS",
+                "color": "#FF6B6B",
+                "children": [
+                  "Manages hardware and software resources",
+                  "Provides environment for user programs"
+                ]
+              },
+              {
+                "name": "OS Functions",
+                "color": "#4ECDC4",
+                "children": [
+                  "Access to computer hardware",
+                  "Resource management"
+                ]
+              },
+              {
+                "name": "OS Goals",
+                "color": "#45B7D1",
+                "children": [
+                  "Maximum CPU utilization",
+                  "Less process starvation"
+                ]
+              },
+              {
+                "name": "Types of OS",
+                "color": "#96CEB4",
+                "children": [
+                  "Single process OS",
+                  "Batch-processing OS"
+                ]
+              },
+              {
+                "name": "OS Components",
+                "color": "#FFEAA7",
+                "children": [
+                  "System software",
+                  "Collection of system software"
+                ]
+              }
+            ]
+          },
+          "crisp_notes": [
+            {
+              "heading": "OS Definition",
+              "point": "Manages hardware and software resources for user programs"
+            },
+            {
+              "heading": "OS Importance",
+              "point": "Provides isolation and protection for user programs"
+            },
+            {
+              "heading": "OS Goals",
+              "point": "Maximize CPU utilization and minimize process starvation"
+            },
+            {
+              "heading": "OS Types",
+              "point": "Single process, batch-processing, and multitasking OS"
+            },
+            {
+              "heading": "OS Components",
+              "point": "System software and collection of system software"
+            }
+          ],
+          "keywords": [
+            {
+              "term": "Operating System",
+              "color": "#FF6B6B"
+            },
+            {
+              "term": "Resource Management",
+              "color": "#4ECDC4"
+            },
+            {
+              "term": "CPU Utilization",
+              "color": "#45B7D1"
+            },
+            {
+              "term": "Process Starvation",
+              "color": "#96CEB4"
+            },
+            {
+              "term": "System Software",
+              "color": "#FFEAA7"
+            },
+            {
+              "term": "Hardware Resources",
+              "color": "#DDA0DD"
+            },
+            {
+              "term": "Software Resources",
+              "color": "#FF8C42"
+            },
+            {
+              "term": "User Programs",
+              "color": "#6BCB77"
+            }
+          ]
+        },
+        {
+          "topic": "Single Process OS",
+          "mindmap": {
+            "center": "Single Process Operating System",
+            "branches": [
+              {
+                "name": "Definition",
+                "color": "#FF6B6B",
+                "children": [
+                  "Only one process executes at a time"
+                ]
+              },
+              {
+                "name": "Characteristics",
+                "color": "#4ECDC4",
+                "children": [
+                  "Only one process in memory",
+                  "No multitasking"
+                ]
+              },
+              {
+                "name": "Advantages",
+                "color": "#45B7D1",
+                "children": [
+                  "Simple to implement",
+                  "Low overhead"
+                ]
+              },
+              {
+                "name": "Disadvantages",
+                "color": "#96CEB4",
+                "children": [
+                  "Low CPU utilization",
+                  "High process starvation"
+                ]
+              },
+              {
+                "name": "Examples",
+                "color": "#FFEAA7",
+                "children": [
+                  "MS DOS",
+                  "ATLAS"
+                ]
+              }
+            ]
+          },
+          "crisp_notes": [
+            {
+              "heading": "Single Process OS Definition",
+              "point": "Only one process executes at a time"
+            },
+            {
+              "heading": "Single Process OS Characteristics",
+              "point": "Only one process in memory, no multitasking"
+            },
+            {
+              "heading": "Single Process OS Advantages",
+              "point": "Simple to implement, low overhead"
+            },
+            {
+              "heading": "Single Process OS Disadvantages",
+              "point": "Low CPU utilization, high process starvation"
+            },
+            {
+              "heading": "Single Process OS Examples",
+              "point": "MS DOS, ATLAS"
+            }
+          ],
+          "keywords": [
+            {
+              "term": "Single Process OS",
+              "color": "#FF6B6B"
+            },
+            {
+              "term": "Multitasking",
+              "color": "#4ECDC4"
+            },
+            {
+              "term": "CPU Utilization",
+              "color": "#45B7D1"
+            },
+            {
+              "term": "Process Starvation",
+              "color": "#96CEB4"
+            },
+            {
+              "term": "Memory Management",
+              "color": "#FFEAA7"
+            },
+            {
+              "term": "Process Scheduling",
+              "color": "#DDA0DD"
+            },
+            {
+              "term": "Context Switching",
+              "color": "#FF8C42"
+            },
+            {
+              "term": "Operating System",
+              "color": "#6BCB77"
+            }
+          ]
+        },
+        {
+          "topic": "Thread",
+          "mindmap": {
+            "center": "Thread: An Independent Path of Execution",
+            "branches": [
+              {
+                "name": "Definition",
+                "color": "#FF6B6B",
+                "children": [
+                  "An independent path of execution in a process"
+                ]
+              },
+              {
+                "name": "Characteristics",
+                "color": "#4ECDC4",
+                "children": [
+                  "Shares memory with other threads",
+                  "Has its own program counter"
+                ]
+              },
+              {
+                "name": "Advantages",
+                "color": "#45B7D1",
+                "children": [
+                  "Improves system responsiveness",
+                  "Increases CPU utilization"
+                ]
+              },
+              {
+                "name": "Disadvantages",
+                "color": "#96CEB4",
+                "children": [
+                  "Increases complexity",
+                  "Requires synchronization"
+                ]
+              },
+              {
+                "name": "Examples",
+                "color": "#FFEAA7",
+                "children": [
+                  "Multithreaded programs",
+                  "Multitasking operating systems"
+                ]
+              }
+            ]
+          },
+          "crisp_notes": [
+            {
+              "heading": "Thread Definition",
+              "point": "An independent path of execution in a process"
+            },
+            {
+              "heading": "Thread Characteristics",
+              "point": "Shares memory with other threads, has its own program counter"
+            },
+            {
+              "heading": "Thread Advantages",
+              "point": "Improves system responsiveness, increases CPU utilization"
+            },
+            {
+              "heading": "Thread Disadvantages",
+              "point": "Increases complexity, requires synchronization"
+            },
+            {
+              "heading": "Thread Examples",
+              "point": "Multithreaded programs, multitasking operating systems"
+            }
+          ],
+          "keywords": [
+            {
+              "term": "Thread",
+              "color": "#FF6B6B"
+            },
+            {
+              "term": "Process",
+              "color": "#4ECDC4"
+            },
+            {
+              "term": "Memory Sharing",
+              "color": "#45B7D1"
+            },
+            {
+              "term": "Program Counter",
+              "color": "#96CEB4"
+            },
+            {
+              "term": "Synchronization",
+              "color": "#FFEAA7"
+            },
+            {
+              "term": "Multithreading",
+              "color": "#DDA0DD"
+            },
+            {
+              "term": "Multitasking",
+              "color": "#FF8C42"
+            },
+            {
+              "term": "Operating System",
+              "color": "#6BCB77"
+            }
+          ]
+        },
+        {
+          "topic": "Components of OS",
+          "mindmap": {
+            "center": "Components of OS",
+            "branches": [
+              {
+                "name": "Kernel",
+                "color": "#FF6B6B",
+                "children": [
+                  "Heart of OS",
+                  "Interacts with Hardware"
+                ]
+              },
+              {
+                "name": "User Space",
+                "color": "#4ECDC4",
+                "children": [
+                  "Where Apps Run",
+                  "No Privileged Access"
+                ]
+              },
+              {
+                "name": "Process Management",
+                "color": "#45B7D1",
+                "children": [
+                  "Scheduling Processes",
+                  "Creating & Deleting Processes"
+                ]
+              },
+              {
+                "name": "Memory Management",
+                "color": "#96CEB4",
+                "children": [
+                  "Allocating Memory",
+                  "Keeping Track of Memory"
+                ]
+              },
+              {
+                "name": "File Management",
+                "color": "#FFEAA7",
+                "children": [
+                  "Creating & Deleting Files",
+                  "Organizing Files"
+                ]
+              }
+            ]
+          },
+          "crisp_notes": [
+            {
+              "heading": "Kernel",
+              "point": "Kernel interacts directly with hardware and performs crucial tasks."
+            },
+            {
+              "heading": "User Space",
+              "point": "User space is where application software runs without privileged access."
+            },
+            {
+              "heading": "Process Management",
+              "point": "Process management involves scheduling and creating processes."
+            },
+            {
+              "heading": "Memory Management",
+              "point": "Memory management involves allocating and keeping track of memory."
+            },
+            {
+              "heading": "File Management",
+              "point": "File management involves creating and organizing files."
+            }
+          ],
+          "keywords": [
+            {
+              "term": "Kernel",
+              "color": "#FF6B6B"
+            },
+            {
+              "term": "User Space",
+              "color": "#4ECDC4"
+            },
+            {
+              "term": "Process Management",
+              "color": "#45B7D1"
+            },
+            {
+              "term": "Memory Management",
+              "color": "#96CEB4"
+            },
+            {
+              "term": "File Management",
+              "color": "#FFEAA7"
+            }
+          ]
+        },
+        {
+          "topic": "Types of System Calls",
+          "mindmap": {
+            "center": "Types of System Calls",
+            "branches": [
+              {
+                "name": "Process Control",
+                "color": "#FF6B6B",
+                "children": [
+                  "Create Process",
+                  "Terminate Process"
+                ]
+              },
+              {
+                "name": "File Management",
+                "color": "#4ECDC4",
+                "children": [
+                  "Create File",
+                  "Delete File"
+                ]
+              },
+              {
+                "name": "Device Management",
+                "color": "#45B7D1",
+                "children": [
+                  "Request Device",
+                  "Release Device"
+                ]
+              },
+              {
+                "name": "Information Management",
+                "color": "#96CEB4",
+                "children": [
+                  "Get Time",
+                  "Set Time"
+                ]
+              },
+              {
+                "name": "Communication Management",
+                "color": "#FFEAA7",
+                "children": [
+                  "Create Connection",
+                  "Send Messages"
+                ]
+              }
+            ]
+          },
+          "crisp_notes": [
+            {
+              "heading": "Process Control",
+              "point": "Process control involves creating and terminating processes."
+            },
+            {
+              "heading": "File Management",
+              "point": "File management involves creating and deleting files."
+            },
+            {
+              "heading": "Device Management",
+              "point": "Device management involves requesting and releasing devices."
+            },
+            {
+              "heading": "Information Management",
+              "point": "Information management involves getting and setting time."
+            },
+            {
+              "heading": "Communication Management",
+              "point": "Communication management involves creating connections and sending messages."
+            }
+          ],
+          "keywords": [
+            {
+              "term": "Process Control",
+              "color": "#FF6B6B"
+            },
+            {
+              "term": "File Management",
+              "color": "#4ECDC4"
+            },
+            {
+              "term": "Device Management",
+              "color": "#45B7D1"
+            },
+            {
+              "term": "Information Management",
+              "color": "#96CEB4"
+            },
+            {
+              "term": "Communication Management",
+              "color": "#FFEAA7"
+            }
+          ]
+        },
+        {
+          "topic": "CPU Architecture and Boot Process",
+          "mindmap": {
+            "center": "CPU Architecture and Boot Process",
+            "branches": [
+              {
+                "name": "CPU Initialization",
+                "color": "#FF6B6B",
+                "children": [
+                  "CPU Initializes",
+                  "Looks for BIOS"
+                ]
+              },
+              {
+                "name": "BIOS",
+                "color": "#4ECDC4",
+                "children": [
+                  "Tests Hardware",
+                  "Initializes Hardware"
+                ]
+              },
+              {
+                "name": "POST",
+                "color": "#45B7D1",
+                "children": [
+                  "Tests Hardware",
+                  "Initializes Hardware"
+                ]
+              },
+              {
+                "name": "UEFI",
+                "color": "#96CEB4",
+                "children": [
+                  "Loads UEFI",
+                  "Initializes Hardware"
+                ]
+              },
+              {
+                "name": "Boot Process",
+                "color": "#FFEAA7",
+                "children": [
+                  "CPU Initializes",
+                  "BIOS Initializes"
+                ]
+              }
+            ]
+          },
+          "crisp_notes": [
+            {
+              "heading": "CPU Initialization",
+              "point": "CPU initializes itself and looks for BIOS."
+            },
+            {
+              "heading": "BIOS",
+              "point": "BIOS tests and initializes system hardware."
+            },
+            {
+              "heading": "POST",
+              "point": "POST tests and initializes system hardware."
+            },
+            {
+              "heading": "UEFI",
+              "point": "UEFI loads and initializes hardware."
+            },
+            {
+              "heading": "Boot Process",
+              "point": "Boot process involves CPU initialization and BIOS initialization."
+            }
+          ],
+          "keywords": [
+            {
+              "term": "CPU Initialization",
+              "color": "#FF6B6B"
+            },
+            {
+              "term": "BIOS",
+              "color": "#4ECDC4"
+            },
+            {
+              "term": "POST",
+              "color": "#45B7D1"
+            },
+            {
+              "term": "UEFI",
+              "color": "#96CEB4"
+            },
+            {
+              "term": "Boot Process",
+              "color": "#FFEAA7"
+            }
+          ]
+        },
+        {
+          "topic": "Primary vs Secondary Memory",
+          "mindmap": {
+            "center": "Primary vs Secondary Memory",
+            "branches": [
+              {
+                "name": "Cost",
+                "color": "#FF6B6B",
+                "children": [
+                  "Primary storages are costly",
+                  "Registers are most expensive"
+                ]
+              },
+              {
+                "name": "Access Speed",
+                "color": "#4ECDC4",
+                "children": [
+                  "Primary has higher access speed",
+                  "Registers has highest access speed"
+                ]
+              },
+              {
+                "name": "Storage Size",
+                "color": "#45B7D1",
+                "children": [
+                  "Secondary has more space",
+                  "Primary memory is volatile"
+                ]
+              },
+              {
+                "name": "Volatility",
+                "color": "#96CEB4",
+                "children": [
+                  "Primary memory is volatile",
+                  "Secondary is non-volatile"
+                ]
+              },
+              {
+                "name": "Comparison",
+                "color": "#FFEAA7",
+                "children": [
+                  "Primary vs Secondary Memory comparison"
+                ]
+              }
+            ]
+          },
+          "crisp_notes": [
+            {
+              "heading": "Primary Memory",
+              "point": "Fastest memory type, volatile and expensive"
+            },
+            {
+              "heading": "Secondary Memory",
+              "point": "Slower memory type, non-volatile and cheaper"
+            },
+            {
+              "heading": "Registers",
+              "point": "Smallest unit of storage, highest access speed"
+            },
+            {
+              "heading": "Cache",
+              "point": "Additional memory system, stores frequently used data"
+            },
+            {
+              "heading": "Main Memory",
+              "point": "RAM, stores data temporarily"
+            }
+          ],
+          "keywords": [
+            {
+              "term": "Registers",
+              "color": "#FF6B6B"
+            },
+            {
+              "term": "Cache",
+              "color": "#4ECDC4"
+            },
+            {
+              "term": "Main Memory",
+              "color": "#45B7D1"
+            },
+            {
+              "term": "Secondary Memory",
+              "color": "#96CEB4"
+            },
+            {
+              "term": "Volatility",
+              "color": "#FFEAA7"
+            },
+            {
+              "term": "Primary Memory",
+              "color": "#DDA0DD"
+            }
+          ]
+        },
+        {
+          "topic": "Process States and Queues",
+          "mindmap": {
+            "center": "Process States and Queues",
+            "branches": [
+              {
+                "name": "Process States",
+                "color": "#FF8C42",
+                "children": [
+                  "New",
+                  "Ready",
+                  "Running",
+                  "Waiting",
+                  "Zombie"
+                ]
+              },
+              {
+                "name": "Process Queues",
+                "color": "#6BCB77",
+                "children": [
+                  "Job Queue",
+                  "Ready Queue",
+                  "Waiting Queue"
+                ]
+              },
+              {
+                "name": "Process Creation",
+                "color": "#FF6B6B",
+                "children": [
+                  "Load program into memory",
+                  "Allocate runtime stack",
+                  "Heap memory allocation"
+                ]
+              },
+              {
+                "name": "Process Attributes",
+                "color": "#4ECDC4",
+                "children": [
+                  "Process ID",
+                  "Program Counter",
+                  "Process State",
+                  "Priority"
+                ]
+              },
+              {
+                "name": "Process Control Block",
+                "color": "#45B7D1",
+                "children": [
+                  "Stores info/attributes of a process",
+                  "Data structure used for each process"
+                ]
+              }
+            ]
+          },
+          "crisp_notes": [
+            {
+              "heading": "Process States",
+              "point": "New, Ready, Running, Waiting, Zombie states"
+            },
+            {
+              "heading": "Process Queues",
+              "point": "Job Queue, Ready Queue, Waiting Queue"
+            },
+            {
+              "heading": "Process Creation",
+              "point": "Steps involved in creating a process"
+            },
+            {
+              "heading": "Process Attributes",
+              "point": "Features that identify a process uniquely"
+            },
+            {
+              "heading": "Process Control Block",
+              "point": "Stores info/attributes of a process"
+            }
+          ],
+          "keywords": [
+            {
+              "term": "Process States",
+              "color": "#FF8C42"
+            },
+            {
+              "term": "Process Queues",
+              "color": "#6BCB77"
+            },
+            {
+              "term": "Process Creation",
+              "color": "#FF6B6B"
+            },
+            {
+              "term": "Process Attributes",
+              "color": "#4ECDC4"
+            },
+            {
+              "term": "Process Control Block",
+              "color": "#45B7D1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

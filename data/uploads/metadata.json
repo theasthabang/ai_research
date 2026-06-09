@@ -1,0 +1,17 @@
+{
+    "OS_Full_Notes (1).pdf": {
+        "filename": "OS_Full_Notes (1).pdf",
+        "path": "./data/uploads\\OS_Full_Notes (1).pdf",
+        "chunks_count": 196,
+        "pages_count": 41,
+        "n_page_groups": 13,
+        "status": "indexed"
+    },
+    "sample_test_paper.pdf": {
+        "filename": "sample_test_paper.pdf",
+        "path": "./data/uploads\\sample_test_paper.pdf",
+        "chunks_count": 1,
+        "pages_count": 1,
+        "status": "indexed"
+    }
+}
